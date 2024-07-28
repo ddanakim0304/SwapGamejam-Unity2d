@@ -303,7 +303,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bossPrefab: {fileID: 4732642634758572555, guid: fe5f1fae566a64ea2b43cc2b6106d948, type: 3}
   spawnPoint: {fileID: 129022745}
-  bossSpawnTime: 50
+  bossSpawnTime: 40
   bossDefeatTime: 40
   bossInstance: {fileID: 0}
   garbageSpawner: {fileID: 491690647}
@@ -741,10 +741,10 @@ MonoBehaviour:
   - {fileID: 6094154666122711581, guid: 6eb416fab204b4fafb329325e0283d23, type: 3}
   - {fileID: 1739097817598855123, guid: 34bd66aeebb724598a5485b3bde55556, type: 3}
   spawnPoint: {fileID: 491690648}
-  initialSpawnRate: 4
+  initialSpawnRate: 3
   maxSpawnRate: 0.5
-  spawnRateIncreaseInterval: 3
-  spawnRateIncreaseAmount: 0.2
+  spawnRateIncreaseInterval: 2
+  spawnRateIncreaseAmount: 0.3
 --- !u!4 &491690648
 Transform:
   m_ObjectHideFlags: 0
@@ -2474,8 +2474,8 @@ MonoBehaviour:
   - {fileID: 118477802}
   - {fileID: 1525140059}
   spawnRate: 2
-  difficultyIncreaseInterval: 8
-  maxSpawnTime: 50
+  difficultyIncreaseInterval: 10
+  maxSpawnTime: 40
 --- !u!4 &2080213483
 Transform:
   m_ObjectHideFlags: 0
