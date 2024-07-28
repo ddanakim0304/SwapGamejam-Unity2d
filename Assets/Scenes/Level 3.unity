@@ -241,37 +241,6 @@ MonoBehaviour:
   m_Text: 'GAME
 
     OVER'
---- !u!1 &118477801
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 118477802}
-  m_Layer: 0
-  m_Name: GameObject (5)
-  m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &118477802
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 118477801}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.599998, y: -3, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2080213483}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &129022743
 GameObject:
   m_ObjectHideFlags: 0
@@ -283,7 +252,7 @@ GameObject:
   - component: {fileID: 129022745}
   - component: {fileID: 129022744}
   m_Layer: 0
-  m_Name: Boss Spawner 1
+  m_Name: Boss Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -424,10 +393,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 2
+  m_Mass: 4
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1.3
+  m_GravityScale: 1.5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -914,7 +883,7 @@ Transform:
   m_GameObject: {fileID: 743987223}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.599998, y: 8.97, z: 0}
+  m_LocalPosition: {x: 18.569998, y: 7.61, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -970,7 +939,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.9315591, b: 0, a: 1}
+  m_Color: {r: 0.8396226, g: 0, b: 0.20324682, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -990,7 +959,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: GARBAGE BAG
+  m_Text: THE MIGHTY KILLER
 --- !u!222 &744017377
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1073,7 +1042,7 @@ SpriteRenderer:
   m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f240034fa97824ab188c05ce3e8418ba, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3063813, g: 0.38249344, b: 0.4811321, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1333,7 +1302,7 @@ Transform:
   m_GameObject: {fileID: 836825279}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.599998, y: 4.5, z: 0}
+  m_LocalPosition: {x: 18.569998, y: 1.3399999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1496,7 +1465,7 @@ Transform:
   m_GameObject: {fileID: 998063184}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.599998, y: -0.5, z: 0}
+  m_LocalPosition: {x: 18.569998, y: -5.63, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1624,7 +1593,7 @@ Transform:
   m_GameObject: {fileID: 1217000156}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.599998, y: 7, z: 0}
+  m_LocalPosition: {x: 18.569998, y: 4.35, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1933,37 +1902,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1524849644}
   m_CullTransparentMesh: 1
---- !u!1 &1525140058
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1525140059}
-  m_Layer: 0
-  m_Name: GameObject (6)
-  m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1525140059
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1525140058}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.599998, y: -5.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2080213483}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1614557422
 GameObject:
   m_ObjectHideFlags: 0
@@ -2093,7 +2031,7 @@ Transform:
   m_GameObject: {fileID: 1663944047}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.6, y: 2, z: 0}
+  m_LocalPosition: {x: 18.57, y: -1.67, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2442,7 +2380,7 @@ GameObject:
   - component: {fileID: 2080213483}
   - component: {fileID: 2080213482}
   m_Layer: 0
-  m_Name: Fish Spawner
+  m_Name: Jellyfish Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2461,18 +2399,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemiesPrefabs:
-  - {fileID: 5510836938425082727, guid: 0156ca923a15e4b44bc44c346f1eefa8, type: 3}
-  - {fileID: 5510836938425082727, guid: 979f6fabeafa64b6c9fb87528b593747, type: 3}
-  - {fileID: 5510836938425082727, guid: 815581e79d3de4a69a6da5e341d55176, type: 3}
-  - {fileID: 5510836938425082727, guid: 53af972f7118345d3a65e5228fad8ec3, type: 3}
+  - {fileID: 7036165377774819566, guid: c6153ccba29b74118b17d359e179b856, type: 3}
+  - {fileID: 8452885867332226928, guid: 265e228fac8a04926b627c26132b6f08, type: 3}
+  - {fileID: 5474081714729780352, guid: 00766a9e816c349e59350b332acde9c9, type: 3}
+  - {fileID: 5886661729073755127, guid: 01bb60fac507042959815627c22538a2, type: 3}
   spawnPoints:
   - {fileID: 1663944048}
   - {fileID: 836825280}
   - {fileID: 1217000157}
   - {fileID: 743987224}
   - {fileID: 998063185}
-  - {fileID: 118477802}
-  - {fileID: 1525140059}
   spawnRate: 2
   difficultyIncreaseInterval: 8
   maxSpawnTime: 50
@@ -2494,8 +2430,6 @@ Transform:
   - {fileID: 1217000157}
   - {fileID: 743987224}
   - {fileID: 998063185}
-  - {fileID: 118477802}
-  - {fileID: 1525140059}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
