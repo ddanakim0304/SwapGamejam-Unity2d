@@ -407,7 +407,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.5, y: 0, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_LocalScale: {x: 2.54, y: 2.54, z: 2.54}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -424,10 +424,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 2
+  m_Mass: 4
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1.3
+  m_GravityScale: 1.2
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -452,7 +452,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myRigidbody: {fileID: 146015510}
-  flapStrength: 8
+  flapStrength: 7
   logic: {fileID: 820641496}
   birdIsAlive: 1
 --- !u!95 &146015512
@@ -742,7 +742,7 @@ MonoBehaviour:
   - {fileID: 1739097817598855123, guid: 34bd66aeebb724598a5485b3bde55556, type: 3}
   spawnPoint: {fileID: 491690648}
   initialSpawnRate: 3
-  maxSpawnRate: 0.5
+  maxSpawnRate: 0.9
   spawnRateIncreaseInterval: 2
   spawnRateIncreaseAmount: 0.3
 --- !u!4 &491690648
@@ -2473,9 +2473,9 @@ MonoBehaviour:
   - {fileID: 998063185}
   - {fileID: 118477802}
   - {fileID: 1525140059}
-  spawnRate: 2
-  difficultyIncreaseInterval: 10
-  maxSpawnTime: 40
+  spawnRate: 1.3
+  difficultyIncreaseInterval: 7
+  maxSpawnTime: 32
 --- !u!4 &2080213483
 Transform:
   m_ObjectHideFlags: 0

@@ -1,57 +1,51 @@
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
 public class SawSpawner : MonoBehaviour
 {
-    public GameObject[] garbagePrefabs;
-    public Transform spawnPoint;
-    public float initialSpawnRate = 3f; // Initial spawn rate in seconds
-    public float maxSpawnRate = 1f; // Maximum spawn rate in seconds
-    public float spawnRateIncreaseInterval = 5f; // Interval to increase spawn rate in seconds
-    public float spawnRateIncreaseAmount = 0.2f; // Amount to decrease spawn rate
-    private float currentSpawnRate;
-    private float spawnTimer = 0f;
-    private float increaseTimer = 0f;
-
-    void Start()
-    {
-        currentSpawnRate = initialSpawnRate;
-    }
+    public GameObject sawPrefab; // Saw prefab
+    public Transform[] spawnPoints; // Array of spawn points
+    private float elapsedTime = 0f; // Timer to track total elapsed time
+    private bool isBossSpawned = false; // Flag to check if the boss has spawned
 
     void Update()
     {
-        // Update the spawn timer
-        spawnTimer += Time.deltaTime;
-        increaseTimer += Time.deltaTime;
-
-        // Check if it's time to spawn garbage
-        if (spawnTimer >= currentSpawnRate)
+        if (isBossSpawned)
         {
-            SpawnGarbage();
-            spawnTimer = 0f;
-        }
-
-        // Check if it's time to increase the spawn rate
-        if (increaseTimer >= spawnRateIncreaseInterval)
-        {
-            IncreaseSpawnRate();
-            increaseTimer = 0f;
+            elapsedTime += Time.deltaTime;
         }
     }
 
-    void SpawnGarbage()
+    public void StartTimer()
     {
-        // Select a random prefab from the array
-        int prefabIndex = Random.Range(0, garbagePrefabs.Length);
-        GameObject selectedPrefab = garbagePrefabs[prefabIndex];
-        // Instantiate the selected prefab at the spawn point
-        Instantiate(selectedPrefab, spawnPoint.position, spawnPoint.rotation);
+        isBossSpawned = true;
+        elapsedTime = 0f;
     }
 
-    void IncreaseSpawnRate()
+    public void SpawnSaws()
     {
-        // Decrease the spawn rate, ensuring it doesn't go below the maximum spawn rate
-        currentSpawnRate = Mathf.Max(currentSpawnRate - spawnRateIncreaseAmount, maxSpawnRate);
+        int minSaws = 1;
+        int maxSaws = 2;
+
+        if (elapsedTime >= 10f && elapsedTime < 20f)
+        {
+            minSaws = 3;
+            maxSaws = 4;
+        }
+        else if (elapsedTime >= 20f)
+        {
+            minSaws = 5;
+            maxSaws = spawnPoints.Length;
+        }
+
+        int sawsToSpawn = Random.Range(minSaws, maxSaws + 1);
+
+        // Spawn the saws at random spawn points
+        for (int i = 0; i < sawsToSpawn; i++)
+        {
+            int spawnIndex = Random.Range(0, spawnPoints.Length);
+            Instantiate(sawPrefab, spawnPoints[spawnIndex].position, Quaternion.identity);
+        }
     }
 }
