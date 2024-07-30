@@ -87,6 +87,12 @@ public class BossSpawner3 : MonoBehaviour
         StartCoroutine(MoveBossToPosition(offScreenPosition));
 
         enabled = false;
-        logicScript.GameClear();
+
+        // Check if the game is not over before calling GameClear
+        if (!logicScript.isGameOver)
+        {
+            logicScript.GameClear();
+        }
+
     }
 }

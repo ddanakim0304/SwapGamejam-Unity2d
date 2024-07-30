@@ -4,12 +4,15 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(BoxCollider2D))]
+[RequireComponent(typeof(AudioSource))]
 public class WaveMoveScript : MonoBehaviour
 {
     public float speed = 10f;
+    public AudioClip activationClip;
 
     private Rigidbody2D rb;
     private BoxCollider2D boxCollider;
+    private AudioSource audioSource;
 
     void Start()
     {
@@ -18,6 +21,13 @@ public class WaveMoveScript : MonoBehaviour
 
         boxCollider = GetComponent<BoxCollider2D>();
         boxCollider.isTrigger = true; // Set the BoxCollider2D to be a trigger
+
+        audioSource = GetComponent<AudioSource>();
+        if (activationClip != null)
+        {
+            audioSource.clip = activationClip;
+            audioSource.Play();
+        }
     }
 
     // Update is called once per frame

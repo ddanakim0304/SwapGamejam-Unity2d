@@ -17,7 +17,7 @@ public class LogicScript : MonoBehaviour
 
     public GameObject gameclearUI;
 
-    private bool isGameOver = false;
+    public bool isGameOver = false;
 
     void Start()
     {
