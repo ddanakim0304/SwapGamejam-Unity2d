@@ -24,17 +24,15 @@ Enough chit-chat. Let’s make some waves and dive into the ocean! 🌊🐾
 - **Themes**:
   - Wave (Main Theme)
   - Pixel Art / Darkness (Optional Theme)
-  
-## 🎮 How to Play
+ 
+## 🎖 Achievements
 
-- **Objective**: Guide Kitty through the ocean using her wave-making abilities to explore the deep and find her parents.
-- **Controls**: [Add controls information here]
+Ranked Overall #6 in Swap Jam 2024
 
 ## 🛠 Development
 
 - **Engine**: Unity
 - **Language**: C#
-- **Submission**: Swap Jam 2024
 
 ## 🔗 Credits
 
