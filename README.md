@@ -1,6 +1,7 @@
 # 🌌 Alien Kitty's Cosmic Adventure 🐱✨
 
 [**Play Now on Itch.io!**](https://ddanakim0304.itch.io/cat-ch-me-if-you-can)
+
 <img width="397" alt="GR9h8U" src="https://github.com/user-attachments/assets/afed169e-272b-4853-95a1-57155ee202c5">
 <img width="397" alt="Q3o7AS" src="https://github.com/user-attachments/assets/c424db25-3a73-40e6-af0a-6200b39a8046">
 <img width="397" alt="n+JVGo" src="https://github.com/user-attachments/assets/f50de5c2-2d24-4638-a124-08f6f9fc0cdf">
