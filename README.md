@@ -42,9 +42,6 @@ Ranked Overall #6 in Swap Jam 2024
   - [Spearfishing Assets Pack by Nszym](https://nszym.itch.io/spearfishing-assets-pack)
 - **Music**: [Fesliyan Studios](https://www.FesliyanStudios.com)
 
-## 📜 License
-
-[Specify license information here]
 
 ---
 
