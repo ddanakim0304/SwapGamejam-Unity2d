@@ -1,4 +1,4 @@
-# 🌌 Alien Kitty's Cosmic Adventure 🐱✨
+# 🌌 Cat-ch Me If You Can 🐱✨
 
 [**Play Now on Itch.io!**](https://ddanakim0304.itch.io/cat-ch-me-if-you-can)
 
